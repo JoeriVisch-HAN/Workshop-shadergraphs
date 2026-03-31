@@ -17,10 +17,11 @@ Open the **Sample Scene** and add any 3D objects you want to experiment with.
 Go to the **Shaders** folder and choose one of the two example shaders.  
 Expand it using the arrow and drag the shader onto a 3D object.
 
-### 🆕 Step 4 — Create Your Own Shader  
+### 🆕 Step 4 — Create Your Own Shader
 In the **Shaders** folder, create a new shader:  
 **Create → Shader Graph → URP → Unlit Shader Graph**
 
+![createShader](images/CreateShader.png)
 ---
 
 # 🎨 Chapter 2 — Adding Color  
@@ -30,12 +31,13 @@ In this chapter, you’ll create your first custom shader by blending colors.
 Combine two colors and output them to the object.
 
 ### 🪄 Steps  
-1. Create a new **Unlit Shader Graph** and name it **Color**.  
-2. In the **Blackboard**, add **two Color properties**.  
-3. Drag both Color properties into the graph.  
-4. Add an **Add** node and connect both colors to it.  
-5. Connect the output of the Add node to the **Fragment → Base Color**.  
-6. Save the shader and apply the material to an object.  
+1. In the **Blackboard**, add **two Color properties**.  
+![createColorPropertie](images/CreateColorAndBlackboard.png)
+2. Drag both Color properties into the graph.  
+3. Add an **Add** node and connect both colors to it.  
+![createAdd](images/CreateAdd.png)
+4. Connect the output of the Add node to the **Fragment → Base Color**.  
+5. Save the shader and apply the material to an object.  
    → Your object now displays the combined colors.
 
 This forms the foundation for the next chapters.
@@ -64,7 +66,7 @@ Sample a texture and optionally tint it with your color.
      - Multiply → Fragment  
 
 Your shader now supports both color and texture.
-
+![AddTexture](images/addShader.png)
 ---
 
 # 🔄 Chapter 4 — Adding Movement  
@@ -93,10 +95,10 @@ Use UV manipulation + Time to create movement.
 7. Connect Sample Texture 2D → Fragment  
 
 Your texture now scrolls smoothly across the object.
-
+![Movevement](images/AddMovement.png)
 ---
 
-# 🏠🚀 Final Assignment — Decorate Your Own House
+# 🏠 Final Assignment — Decorate Your Own House
 
 **Who:** Your research team  
 **What:** Build a house using primitive 3D objects and decorate it using your own shaders.  
